@@ -4,7 +4,7 @@
 ⊕ [How Apache Airflow Distributes Jobs on Celery workers](https://www.sicara.ai/blog/2019-04-08-apache-airflow-celery-workers)
 
 ## start
-```sh
+```bash
 $ pip install wheel flower
 
 $ celery -A downloader worker --loglevel=debug

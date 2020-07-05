@@ -17,7 +17,7 @@ $ python tutorial_2.py test templated 2015-06-01
 
 + use airflow cli
 
-```sh
+```bash
 # 查看dags位置, 默认是: dags_folder = /Users/xiaofeiwu/airflow/dags
 $ subl ~/airflow/airflow.cfg 
 $ cp tutorial_2.py ~/airflow/dags/

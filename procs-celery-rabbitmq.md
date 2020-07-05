@@ -1,7 +1,7 @@
 ⊕ [Using RabbitMQ — Celery 4.4.6 documentation](https://docs.celeryproject.org/en/stable/getting-started/brokers/rabbitmq.html#setting-up-rabbitmq)
 ⊕ [How to Set Up a Task Queue with Celery and RabbitMQ | Linode](https://www.linode.com/docs/development/python/task-queue-celery-rabbitmq/)
 
-```sh
+```bash
 # broker_url = 'amqp://myuser:mypassword@localhost:5672/myvhost'
 $ rabbitmqctl add_user myuser mypassword
 $ rabbitmqctl add_vhost myvhost
