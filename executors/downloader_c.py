@@ -1,10 +1,10 @@
+from executors.downloader import download, list
 class DownloaderCli(object):
     def download(self, url, target, wait=False):
         """
         $ python downloader_c.py download 'https://www.python.org/static/community_logos/python-logo-master-v3-TM.png' 'python-logo.png'
         :return:
         """
-        from downloader import download, list
         r = download.delay(url, target)
         # r.ready()
         # wait until done
@@ -14,9 +14,9 @@ class DownloaderCli(object):
     def list(self):
         """
         $ python downloader_c.py list
+        $ python -m executors.downloader_c list
         :return:
         """
-        from downloader import download, list
         r = list.delay()
         r.ready()
         print(r.get(timeout=1))

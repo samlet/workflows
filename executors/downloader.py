@@ -3,13 +3,14 @@ $ celery -A downloader worker --loglevel=debug
 $ celery -A downloader status
 $ celery -A downloader inspect stats
 '''
+from pathlib import Path
+
 from celery import Celery
 import urllib.request
 import os
-import pathlib
 # Where the downloaded files will be stored
 # BASEDIR="/home/celery/downloadedFiles"
-BASEDIR=pathlib.Path.home()/'downloads'/'tmp'
+BASEDIR: Path=Path.home()/'downloads'/'tmp'
 
 # Create the app and set the broker location (RabbitMQ)
 app = Celery('downloaderApp',
